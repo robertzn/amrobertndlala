@@ -1,0 +1,424 @@
+.VERTICAL-TABS {
+  display: flex;
+  font-size:  0.915em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: $color-white;
+  cursor: pointer;
+}
+
+.VERTICAL-TABS__label {
+  width: 36%;
+  margin-right: 20px;
+  border-bottom: none;
+  border-left: solid 2px $color-white;
+  //$color-primary;
+}
+
+.VERTICAL-TABS__label__element {
+  padding: 15px 20px;
+  text-align: left;
+  //opacity: 0.5;
+}
+
+.VERTICAL-TABS__label__element--active {
+  opacity: 1;
+  background-color: #E6E7E8;
+  border-left: solid 2px $color-white;
+  margin-left: -2px;
+  color: $color-gold;
+}
+
+.VERTICAL-TABS__content {
+  width: 64%;
+}
+
+.VERTICAL-TABS__content__catalog {
+  display: none;
+  padding: 30px;
+}
+
+.VERTICAL-TABS__content__element {
+  padding: 0px;
+}
+
+@media (max-width: 600px) {
+  .VERTICAL-TABS {
+    flex-wrap: wrap;
+  }
+
+  .VERTICAL-TABS__label {
+    width: 100%;
+    padding: unset;
+  }
+
+  .VERTICAL-TABS__label__element {
+    border-bottom: 0px solid grey;
+    text-align: left;
+  }
+
+  .VERTICAL-TABS__content {
+    display: none;
+  }
+
+  .VERTICAL-TABS__content__catalog {
+    display: flex;
+  }
+}
+
+.tab-primary p {
+  /*display: list-item;
+  padding-left: 4rem;
+  position: absolute;*/
+}
+/*
+    */
+
+/*.experience__container {
+  //padding: 20rem 0;
+  //#2c2c54
+  //#222f3e;
+
+  //#254985
+  //#2c2c5409;
+
+  ///#2C3A47
+  //#25488583;
+//    background-color: rgb(53, 59, 69);
+  //background-color: #20232a38;
+  /*background-size: cover;
+  transform: skewY(-2deg);
+  margin-top: -10rem;
+  text-align: left;
+  color: #fff;
+  //border-top: 0.2rem solid $color-primary-light;
+  //border-top: 0.2rem solid #fff;
+  //border-bottom: 0.2rem solid  $color-primary;
+
+  // border-bottom: 0.2rem solid #fff;
+  // border-top: 0.2rem solid #fff;
+
+  & > * {
+    transform: skewY(2deg);
+  }
+
+  /*@include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}*/
+
+.rwt__tabs[data-rwt-vertical='true'] {
+  display: flex;
+  /*@include respond(tab-port) {
+    flex-direction: row;
+  }
+  @include respond(phone) {
+    flex-direction: row;
+  }*/
+}
+
+.rwt__tablist:not([aria-orientation='vertical']) {
+  border-bottom: 1px solid #ddd;
+}
+
+.rwt__tablist[aria-orientation='vertical'] {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-left: 1px solid #ddd;
+  margin-right: 2rem;
+
+  @include respond(tab-port) {
+    font-size: 70%;
+    flex-direction: row;
+    padding: 0rem;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 3;
+  }
+  @include respond(phone) {
+    flex-direction: row;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 3;
+  }
+}
+
+.rwt__tab {
+  display: block;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  //font-size: inherit;
+  color: #fff;
+  padding: 1rem 2rem;
+  //font-weight: 400;
+  //margin-bottom: 3rem;
+  font-size: 0.78em;
+  line-height: 1.72;
+  transition: background 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.rwt__tab[aria-selected='false']:hover,
+.rwt__tab:focus {
+  outline: 0;
+  left: -1px;
+  //background-color: transparent;
+
+  border-left: 0.2rem solid $color-gold;
+  color: #fff;
+  &:hover {
+    transform: translateY(-3px);
+    //box-shadow: 0 0rem 0rem rgba($color-black, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    //box-sizing: inherit;
+    box-shadow: 0 0rem 0rem rgba(transparent, 0.2);
+  }
+}
+
+.rwt__tab[aria-selected='true'] {
+  background-color: transparent;
+  //background-color: #000;
+  color: #fff;
+  left: -1px;
+  //border: 0rem solid #00d8ff;
+  border-left: 0.2rem solid $color-gold;
+
+  @include respond(tab-port) {
+    //font-size: 70%;
+    //flex-direction: row;
+    padding: 1rem;
+    border-left: 0rem solid $color-gold;
+  }
+  @include respond(phone) {
+    //flex-direction: row;
+    padding: 1rem;
+  }
+}
+
+.rwt__tab[aria-selected='true'] {
+  position: relative;
+}
+
+.rwt__tab[aria-selected='true']:after {
+  content: '';
+  position: absolute;
+}
+
+.rwt__tablist:not([aria-orientation='vertical'])
+  .rwt__tab[aria-selected='true']:after {
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  //border-bottom: 2px solid #00d8ff;
+  margin: 2px;
+}
+
+.rwt__tablist[aria-orientation='vertical']
+  .rwt__tab[aria-selected='true']:after {
+  //right: -1px;
+  top: 0;
+  height: 100%;
+  //border-left: 2px solid #00d8ff;
+}
+
+.rwt__tablist::before {
+}
+
+.experience__container {
+  margin-right: 2px;
+}
+
+.rwt__tab {
+  width: 100%;
+  @include respond(tab-port) {
+    //width: 0;
+    height: 3px;
+    display: table-row;
+  }
+  @include respond(phone) {
+    display: table-row;
+    height: 3px;
+  }
+}
+
+.text-intro-tab {
+}
+
+.live {
+  overflow: hidden;
+}
+/*.live > li {
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 2em;
+  margin: 0 0 0.5em 10px;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}
+.live > li::before {
+  position: absolute;
+  content: '\2022';
+  font-family: Arial;
+  color: #fff;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0.5;
+  line-height: 0.75;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.live > li:hover {
+  color: #fff;
+}
+.live > li:hover::before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  opacity: 1;
+  text-shadow: 0 0 4px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.live.type2 > li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 3px;
+  line-height: 0;
+  top: 0.27em;
+  left: 5px;
+}
+.live.type2 > li:hover::before {
+  -webkit-transform: none;
+  transform: none;
+  border-radius: 5px;
+  width: 25px;
+  left: -10px;
+  background: #ba5353;
+}
+
+.live.numbers {
+  counter-reset: numbers 0;
+}
+.live.numbers > li::before {
+  content: counter(numbers, decimal) '.';
+  counter-increment: numbers 1;
+  font-size: 1em;
+  opacity: 0.5;
+  line-height: 1.2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.live.numbers > li:hover:before {
+  opacity: 1;
+  left: -10px;
+  -webkit-transform: none;
+  transform: none;
+  text-shadow: none;
+  -webkit-transition: 0.12s;
+  transition: 0.12s;
+}*/
+
+.experience__container ol,
+ul,
+li {
+  //list-style-type: none;
+  line-height: 2;
+
+  &::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+
+    //
+    //display: block;
+  }
+}
+
+ol {
+  //list-style-type: none;
+}
+
+ion-icon {
+  display: inline-block;
+  color: $color-gold;
+}
+/*
+.icon-img {
+  //
+
+  background-image: url('../../images/icons/hand-left-outline.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+
+/*
+
+Engineer @ Upstatement
+May 2018 - Present
+Write modern, performant, maintainable code for a diverse array of client and internal projects
+Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, Wordpress, Prismic, and Netlify
+Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis
+
+
+Studio Developer @ Scout
+Jan - April 2018
+Worked with a team of three designers to build a marketing website and e-commerce platform for blistabloc, an ambitious startup originating from Northeastern
+Helped solidify a brand direction for blistabloc that spans both packaging and web
+Interfaced with clients on a weekly basis, providing technological expertise
+
+
+UI Engineer Co-op @ Apple
+July - Dec 2017
+Developed and shipped highly interactive web applications for Apple Music using Ember.js
+Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and internal APIs
+Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser
+Contributed extensively to MusicKit.js, a JavaScript framework that allows developers to add an Apple Music player to their web apps
+
+
+Studio Developer @ Scout
+Jan - June 2017
+Collaborated with a small team of student designers to spearhead a new brand and design system for Scout’s inaugural student-led design conference at Northeastern
+Worked closely with designers and management team to develop, document, and manage the conference’s marketing website using Jekyll, Sass, and JavaScript
+
+
+Software Engineer Co-op @ Starry
+July - Dec 2016
+Engineered and maintained major features of Starry's customer-facing web app using ES6, Handlebars, Backbone, Marionette and CSS
+Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with Starry Station
+Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Starry’s iOS and Android mobile apps
+
+
+Creative Technologist Co-op @ MullenLowe
+July - Dec 2015
+Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery
+Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness
+Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more
+
+
+*/
+
+@media screen and (max-width: 50em) {
+  .ShowProjectDescription__first,
+  .ShowProjectDescription__second {
+    display: block;
+    width: 100%;
+    transform: translate(0%, 0%);
+    //background-color: transparent;
+    position: relative;
+    background-color: $color-primary;
+  }
+}

@@ -1,0 +1,154 @@
+.experience{
+  background: $color-gold;
+}
+
+.my__experience {
+  //padding: 15rem 0;
+  display: block;
+  width: 75%;
+  //background: rgb(40, 44, 52);
+  transform: translate(15%, 0%);
+  .fGYjRx {color: $color-white;}
+  .fGYjRx::after{
+    width: 100%;
+    background-color: $color-white;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+    transform: translate(0%, 0%);
+  }
+
+  @include respond(phone) {
+    padding:0;
+    width: 100%;
+    transform: translate(0%, 0%);
+  }
+  p{
+    color: $color-white;
+  }
+
+
+}
+.heading-tertiary{
+  //color: $color-white;
+}
+.PE{
+  padding: 2rem;
+  opacity: 1;
+  background-color: $color-grey;
+}
+
+.tab-primary {
+  backface-visibility: hidden;
+  text-align: left;
+  position: relative;
+  margin: 0 auto;
+
+  &--main {
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    //letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    //text-transform: uppercase;
+    display: block;
+    color: $color-white;
+    //border-bottom: 1px solid $color-white;
+    .comp__n {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.1rem;
+    }
+    &::before{
+      content: '';
+      height: 1px;
+      width: 100%;
+      border-bottom: 1px solid $color-white;
+    }
+  }
+
+  &--sub {
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+    font-family: 'Kufam', cursive;
+    color: $color-white;
+    border-bottom: 1px solid $color-white;
+
+  }
+
+  &--description {
+    list-style-type: none;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    color: $color-white;
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 1.7;
+    max-width: 42em;
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &--sub {
+      position: relative;
+      list-style-type: none;
+      margin: 0.2rem;
+      border-radius: 0.2rem;
+      display: block;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      border-bottom: 1px solid $color-white;
+      //padding: 0.5rem;
+      p {
+        top: 0;
+        padding-left: 3rem;
+        //margin-top: -2.5rem;
+      }
+
+      .icon {
+        top: 0;
+        position: absolute;
+        color: $color-white;
+        //transform: translate(50%, 50%);
+      }
+    }
+
+    ul {
+      list-style: none; /* remove the default */
+    }
+
+    li::before {
+      /* add the new bullet point */
+      /* display: inline-block;
+      content: '';
+      //-webkit-border-radius: 0.375rem;
+      border-radius: 0rem;
+      height: 1px;
+      width: 3rem;
+      margin-right: 2rem;
+      background-color: #bdbdbd;*/
+    }
+
+    li.alternative::before {
+      /* and another color */
+      background-color: #66c;
+    }
+
+    li {
+      text-indent: 0.75em; /* this is only needed if you want to align wrapped text */
+    }
+  }
+}

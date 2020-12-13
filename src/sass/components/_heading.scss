@@ -1,0 +1,29 @@
+
+.about {
+
+  &--education {
+
+
+    &--intro {
+      height: 90vh;
+      background-color:  $color-gold;
+      /*background-image: url(../../images/x.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      //background-attachment: fixed;
+      //background: $color-gold;*/
+
+        color: $color-white;
+
+        @include respond(phone) {
+          margin-top: 10%;
+          max-height: 100%;
+          background-color:  $color-gold;
+        }
+
+
+    }
+  }
+}
+
+

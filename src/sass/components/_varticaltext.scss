@@ -1,0 +1,121 @@
+/*------vertical Text-------------*/
+.jxlTta {
+  display: block;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+    'Lucida Console', Monaco, monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  //color: $color-secondary-text;
+  color: yellowgreen;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  float: left;
+  margin-top: 18%;
+  font-style: italic;
+  margin-left: 5%;
+  position: fixed;
+  font-weight: bold;
+  transition: all $transition-med $transition-ease;
+  //position: relative;
+  
+  @include respond(tab-port) {
+    margin-top: 50%;
+  }
+}
+
+.jxlTta::after {
+  display: block;
+  height: 3rem;
+  //background-color: $color-secondary-text;
+  background-color: $color-white;
+  content: ' ';
+  align-content: center;
+  transform: translate(580%, 15rem);
+  text-align: center;
+  //margin-left: -5%;
+  width: 1px;
+  visibility: hidden;
+  transition: all $transition-med $transition-ease;
+
+}
+
+.yyh::after {
+  display: block;
+  height: 3rem;
+  //background-color: $color-secondary-text;
+  background-color: $color-white;;
+  content: ' ';
+  align-content: center;
+  transform: translate(575%, 15rem);
+  text-align: center;
+  //margin-left: -5: 1px;
+  width: 1px;
+  visibility: hidden;
+}
+
+/*------vertical Text-------------*/
+.yyh {
+  display: block;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+    'Lucida Console', Monaco, monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  //color: $color-secondary-text;
+  //color: $color-white;
+  color: yellowgreen;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  //float: left;
+  margin-top: 18%;
+  margin-left: 95%;
+  position: fixed;
+  font-weight: bold;
+
+  transition: all $transition-med $transition-ease;
+  //position: relative;
+  //font-style: italic;
+  @include respond(tab-port) {
+    margin-top: 50%;
+  }
+}
+
+.j_xlTta {
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+    'Lucida Console', Monaco, monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  float: right;
+  margin: 55%;
+  position: fixed;
+}
+
+.j_xlTta::after {
+  display: block;
+  height: 20rem;
+  background-color: $color-gold;
+  content: ' ';
+  align-content: center;
+  width: 1px;
+  transform: translate(80%, 100%);
+}
+
+.juoHJq::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 90px;
+  background-color: $color-gold;
+  margin: 0px auto;
+}
+
+.krfQUW {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: $color-gold;
+}

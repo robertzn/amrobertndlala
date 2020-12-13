@@ -1,0 +1,55 @@
+.about__me_section {
+  color: $color-gold;
+      background-image: url(../../images/bcg.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+  //background-position: ;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: $color-gold;
+
+  .btn-text {
+    color: #470E52;
+  }
+  .skills {
+    display: block;
+    text-align: left;
+  }
+
+  
+
+  .about-skill {
+    display: flex;
+    text-align: right;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 0.87rem;
+    text-emphasis: none;
+    -webkit-text-emphasis: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Kufam', cursive;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
+  }
+  .profile-pic{
+    @include respond(phone) {
+      width: 50%;
+    }
+  }
+
+  .skill-item {
+    text-align: left;
+    font-weight: bold;
+    float: left;
+    width: 50%;
+    //color: $color-primary-text;
+    .icon{
+      color: $color-gold;
+    }
+  }
+}

@@ -1,0 +1,238 @@
+
+
+.nav {
+  grid-column: center-start/center-end;
+  grid-row: 1/2;
+  display: flex;
+}
+.nav-top {
+  display: flex;
+  height: 3.6rem;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.nav-top__phone,
+.nav-top__address {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: $color-gold;
+  cursor: default;
+  border: none;
+  //text-transform: uppercase;
+  transition: all 0.2s;
+  display: inline;
+  //font-style: italic;
+}
+.nav-top__phone:focus,
+.nav-top__phone:active,
+.nav-top__phone:visited,
+.nav-top__address:focus,
+.nav-top__address:active,
+.nav-top__address:visited {
+  color: $color-gold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  text-transform: uppercase;
+  //border-bottom: $color-gold 2px solid;
+  transition: all 0.2s;
+}
+
+.nav-top__address {
+  margin-left: 2rem;
+  margin-right: auto;
+}
+.nav-top__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: $color-gold;
+}
+.nav-main {
+  display: flex;
+}
+.nav-main__menu {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+.nav-main__menu-item {
+  float: right;
+  margin-right: 1px;
+}
+.nav-main__menu-item:not(:last-child) {
+  margin-right: 2rem;
+}
+@media screen and (max-width: 37.5em) {
+  .nav-main__menu-item {
+    margin-right: 2rem;
+  }
+}
+.nav-main__menu-item a {
+  display: block;
+  min-width: 7rem;
+  height: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  color: $color-gold;
+  text-decoration: none;
+  text-decoration-style: none;
+  box-shadow: none;
+
+}
+.nav-main__menu-item:hover a {
+  //color: $color-black;
+  border-bottom: $color-gold 2px solid;
+  @include respond(phone) {
+    border-bottom: #fff 2px solid;
+  }
+}
+.nav-main__menu-item-red a {
+  color: $color-text;
+}
+.nav-main__menu-item-red:hover a {
+  color: $color-text;
+} 
+.nav-main__logo {
+  height: 6rem;
+  width: auto;
+  margin-right: auto;
+}
+
+.nav-main__callMe {
+  height: 3rem;
+  width: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 37.5em) {
+  .nav-main__logo {
+    height: 5rem;
+    margin-top: 1.2rem;
+  }
+}
+
+.nav-main__menu .nav-main__menu-item a:hover + .hidden,
+.hidden:hover {
+  display: block;
+
+}
+
+.show-menu {
+  text-decoration: none;
+  //color: #;
+  color: $color-primary-text;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 1.9rem;
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 4px;
+  transition: all 1s;
+}
+
+/*Hide checkbox*/
+input[type='checkbox'] {
+  display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type='checkbox']:checked ~ #menu {
+  display: block;
+}
+
+/*Responsive Styles*/
+@media screen and (max-width: 50em) {
+  /*Make dropdown links appear inline*/
+  .nav-main__menu {
+    position: absolute;
+    top: 7rem;
+    right: 3rem;
+    left: 3rem;
+    display: none;
+    background: rgb(40, 44, 52);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    //border: 1px solid #ddd;
+    color: #fff ;
+
+  }
+
+  #navigation {
+    padding: 2.4rem;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+  }
+
+  /*Create vertical spacing*/
+  .nav-main__menu-item {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  .nav-main__menu .nav-main__menu-item,
+  .nav-main__menu-item a {
+    width: 32rem;
+    //background: $color-gold;
+    text-align: right;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    text-decoration: none;
+    text-decoration-style: none;
+    box-shadow: none;
+
+    @include respond(phone) {
+      max-width: 15rem;
+    }
+  }
+  /*Display 'show menu' link*/
+  .show-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*Hide Topnav*/
+  .nav-top {
+    display: none;
+  }
+}
+
+.nav-icon {
+  background-color: $color-gold;
+  width: 3rem;
+  height: 0.3rem;
+  position: relative;
+  border-radius: 2px;
+}
+.nav-icon::before {
+  content: '';
+  position: absolute;
+  background-color: $color-gold;
+  border-radius: 2px;
+  width: 3rem;
+  height: 0.3rem;
+  bottom: 1rem;
+  left: 0;
+}
+.nav-icon::after {
+  content: '';
+  position: absolute;
+  background-color: $color-gold;
+  width: 3rem;
+  height: 0.3rem;
+  top: 1rem;
+  left: 0;
+}
+
+.section {
+  border-bottom: 2px solid $color-gold;
+}

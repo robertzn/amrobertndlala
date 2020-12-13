@@ -1,0 +1,621 @@
+.heading-primary {
+  backface-visibility: hidden;
+  &--main {
+    display: block;
+    //font-size: 5.5rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    //color: $color-gold;
+    line-height: 1.2;
+    -webkit-text-stroke: 0.05rem $color-white;
+    color: transparent;
+    //text-transform: uppercase;
+    //font-family: 'Poppins', sans-serif;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    @include respond(phone) {
+      -webkit-text-stroke: 0rem #fff;
+      color: $color-white;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out;
+    //color: $color-gold;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+.secondary-heading {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-weight: bold;
+  //color: $color-primary-text;
+  color: $color-gold;
+  font-family: 'Poppins', sans-serif;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  text-transform: uppercase;
+  
+}
+
+.secondary-heading-lnger{
+  display: block;
+  font-size:  0.915em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  //color: $color-gold;
+}
+
+.heading-secondary {
+  //font-size: 3.5rem;
+  text-transform: uppercase;
+  //font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-gold,
+    $color-primary
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  ccolor: $color-gold;
+}
+
+
+.paragraph {
+  font-size: $default-font-size;
+  display: block;
+  font-size:  0.915em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: $color-gold;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.text-context {
+  position: relative;
+  color:$color-text;
+  //color: $color-gold;
+}
+.text-context:before {
+  content: '';
+  display: block;
+  height: 2px;
+  margin-bottom: 0.2rem;
+  width: 10.8rem;
+  align-content: center;
+  color: $color-text;
+  background-color: $color-text;
+}
+.column .text-context:before {
+  width: 100%;
+}
+.text-context.text-uppercase {
+  letter-spacing: 0.1rem;
+}
+
+[class*='bg-'] .text-context:before {
+  background-color: $color-text;
+}
+
+h5 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: left;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  // color: #f7eeeed3 !important;
+  //color: $color-primary;
+}
+
+h5::before {
+  display: block;
+  height: 0px;
+  //background-color: #61dafb;
+  content: ' ';
+  width: 150px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+h3 {
+  display: block;
+  //font-size: 2.17em;
+  font-size: 1.425em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.text-intro,
+[class*='content-'] p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+p {
+  font-size:  0.925em;
+  //font-size: 0.925em;
+  //margin-block-start: 1.67em;
+  //margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+
+
+  //display: block;
+  //margin-block-start: 1em;
+  //margin-block-end: 1em;
+  /*margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  max-width: 42em;*/
+  color: $color-gold;
+  //color: $color-white;
+}
+
+a {
+  box-shadow: none;
+}
+.fGYjRx {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 90%;
+  white-space: nowrap;
+  font-size: 22px;
+  margin: 10px 0px 40px;
+  color: $color-gold;
+  font-size: 3.5rem;
+  //font-family: "Judson", serif;
+  //font-style: italic;
+}
+/*
+.fGYjRx::before {
+  counter-increment: section 1;
+  content: '0' counter(section) '.';
+  margin-right: 10px;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+    'Lucida Console', Monaco, monospace;
+  font-weight: normal;
+  color: $color-secondary-light;
+  font-size: 20px;
+  position: relative;
+  bottom: 4px;
+}*/
+
+.fGYjRx::after {
+  content: '';
+  display: block;
+  height: 0.2rem;
+  width: 50%;
+  background-color: $color-gold;
+  position: relative;
+  top: -2px;
+  margin-left: 1px;
+}
+
+/**************************************************/
+.text-landing {
+  color: $color-gold-v;
+  font-family: 'Poppins', sans-serif;
+}
+@media (min-width: 768px) {
+  .text-landing {
+    letter-spacing: 1rem;
+  }
+}
+
+/* -- Subtitle (Before h1, h2) p.subtitle + h1/h2 */
+.text-subtitle {
+  letter-spacing: 0.2rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.text-subtitle p.text-subtitle {
+  font-size: 1.6rem;
+}
+.text-subtitle p.text-subtitle svg {
+  vertical-align: text-top;
+}
+.text-subtitle + p {
+  margin-top: 3.2rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+/* -- Emoji (you'll love this) -- */
+.text-emoji {
+  font-size: 6.8rem;
+  line-height: 8.8rem;
+}
+@media (min-width: 768px) {
+  .text-emoji {
+    font-size: 12.8rem;
+    line-height: 16rem;
+  }
+}
+
+/* -- Numbers (results, sales... 23,478,289 iphones) -- */
+.text-data {
+  font-size: 6.4rem;
+  line-height: 8rem;
+  margin-bottom: 0.8rem;
+}
+@media (min-width: 768px) {
+  .text-data {
+    font-size: 15.2rem;
+    line-height: 16.8rem;
+  }
+}
+
+.text-label {
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 12.8rem;
+}
+
+/* -- Magazine Two Columns -- */
+@media (min-width: 768px) {
+  .text-cols {
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 4.8rem;
+    column-gap: 4.8rem;
+    text-align: left;
+  }
+  .text-landing + .text-cols {
+    margin-top: 1.2rem;
+  }
+} /****************************************************/
+
+h1 svg,
+h2 svg,
+h3 svg,
+h4 svg {
+  margin-top: -0.8rem;
+}
+
+.text-intro svg,
+.text-quote p svg,
+.wall p svg,
+.try svg {
+  margin-top: -0.4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 5.6rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6.6rem;
+    line-height: 7.2rem;
+  }
+}
+
+h1 span {
+  /*font-style: italic;*/
+}
+
+h2 {
+  font-size: 2.2rem;
+  line-height: 3.8rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 4rem;
+    line-height: 5.6rem;
+  }
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 4rem;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+}
+
+h5 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+}
+
+h2.alignleft + p.alignright {
+  margin-bottom: 0;
+  margin-top: 1.2rem;
+}
+
+h3.alignleft + p.alignright {
+  margin-bottom: 0;
+  margin-top: 0.4rem;
+}
+
+h1 + h1 {
+  margin-top: 0.8rem;
+}
+
+h1 + h2 {
+  margin-top: 0.8rem;
+}
+
+h1 + h3 {
+  margin-top: 0.8rem;
+}
+
+h1 + h4 {
+  margin-top: 0.8rem;
+   color: $color-gold;
+   display: block;
+  //font-size:  0.915em;
+  /*margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;*/
+  font-weight: bold;
+  //color: $color-gold;
+}
+
+h1 + h5 {
+  margin-top: 0.8rem;
+}
+
+h1 + h6 {
+  margin-top: 0.8rem;
+}
+
+h2 + h1 {
+  margin-top: 0.8rem;
+}
+
+h2 + h2 {
+  margin-top: 0.8rem;
+}
+
+h2 + h3 {
+  margin-top: 0.8rem;
+}
+
+h2 + h4 {
+  margin-top: 0.8rem;
+}
+
+h2 + h5 {
+  margin-top: 0.8rem;
+}
+
+h2 + h6 {
+  margin-top: 0.8rem;
+}
+
+h3 + h1 {
+  margin-top: 0.8rem;
+}
+
+h3 + h2 {
+  margin-top: 0.8rem;
+}
+
+h3 + h3 {
+  margin-top: 0.8rem;
+}
+
+h3 + h4 {
+  margin-top: 0.8rem;
+}
+
+h3 + h5 {
+  margin-top: 0.8rem;
+}
+
+h3 + h6 {
+  margin-top: 0.8rem;
+}
+
+h4 + h1 {
+  margin-top: 0.8rem;
+}
+
+h4 + h2 {
+  margin-top: 0.8rem;
+}
+
+h4 + h3 {
+  margin-top: 0.8rem;
+}
+
+h4 + h4 {
+  margin-top: 0.8rem;
+}
+
+h4 + h5 {
+  margin-top: 0.8rem;
+}
+
+h4 + h6 {
+  margin-top: 0.8rem;
+}
+
+h5 + h1 {
+  margin-top: 0.8rem;
+}
+
+h5 + h2 {
+  margin-top: 0.8rem;
+}
+
+h5 + h3 {
+  margin-top: 0.8rem;
+}
+
+h5 + h4 {
+  margin-top: 0.8rem;
+}
+
+h5 + h5 {
+  margin-top: 0.8rem;
+}
+
+h5 + h6 {
+  margin-top: 0.8rem;
+}
+
+h6 + h1 {
+  margin-top: 0.8rem;
+}
+
+h6 + h2 {
+  margin-top: 0.8rem;
+}
+
+h6 + h3 {
+  margin-top: 0.8rem;
+}
+
+h6 + h4 {
+  margin-top: 0.8rem;
+}
+
+h6 + h5 {
+  margin-top: 0.8rem;
+}
+
+h6 + h6 {
+  margin-top: 0.8rem;
+}
+
+h1 + img,
+h2 + img,
+h3 + img {
+  margin-bottom: 4.8rem;
+  margin-top: 4.8rem;
+}
+
+[class*='content-'] > [class*='content-'] h2,
+[class*='content-'] > [class*='content-'] h3,
+[class*='content-'] > [class*='content-'] h4 {
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+
+/*== 2.1. Headings with background ==*/
+h1[class*='bg-'] {
+  padding: 2.4rem;
+}
+
+h2[class*='bg-'] {
+  padding: 2.4rem;
+}
+
+h3[class*='bg-'] {
+  padding: 2.4rem;
+}
+
+h4[class*='bg-'] {
+  padding: 2.4rem;
+}
+
+h5[class*='bg-'] {
+  padding: 2.4rem;
+}
+
+h6[class*='bg-'] {
+  padding: 2.4rem;
+}
+
+ul[class*='bg-'],
+ol[class*='bg-'],
+li[class*='bg-'],
+p[class*='bg-'] {
+  padding: 2.4rem;
+}
+
+h1 [class*='bg-'],
+h2 [class*='bg-'],
+h3 [class*='bg-'] {
+  padding: 0.4rem 0.8rem;
+}
+

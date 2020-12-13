@@ -1,0 +1,224 @@
+.about{
+    &--education {
+      padding-top: 7rem;
+      color: $color-gold;
+      background-image: url(../../images/dio.svg);
+      background-repeat: repeat;
+      background-attachment:fixed;
+
+ 
+      p{font-weight: bold;}
+
+      .hero__paragraph {
+        font-size: 0.875em;
+        font-weight: bold;
+
+      }
+
+      .heading_two{
+        line-height: 1.6rem;
+        margin-bottom: 1.2rem;
+        font-weight: normal;
+      }
+
+      .heading_tree{
+        line-height: 1.6rem;
+        margin-bottom: 1.2rem;
+        font-weight: normal;
+        text-decoration: none;
+      }
+
+      .heading-tertiary{
+        font-size: 0.875em;
+        line-height: 1.6;
+        font-weight: bold;
+
+      }
+
+      .heading{
+        font-style: italic;
+      }
+
+
+
+
+
+
+      &--info{
+        max-height: 90vh;
+        background-color:  $color-gold;
+        //color: $color-gold;
+
+
+
+        color: $color-white;
+
+        @include respond(phone) {
+          margin-top: 10%;
+          max-height: 100%;
+        }
+      }
+      &--cover {
+      &--intro {
+        margin-top: 10%;
+        margin-bottom: 15%;
+        &--header {
+          margin: 15%;
+          .secondary-heading-lnger {
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+          }
+
+          p{
+            //margin-right: 20%;
+            text-align: left;
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            //background-color: $color-white;
+            //padding: 1rem;
+            color: $color-white;
+
+          }
+        }
+      }
+    }
+      .paragraph{
+          //padding-right: 15rem;
+      }
+
+      .hero__header{
+          font-weight: bold;
+      }
+
+      
+    }
+    &--container{margin-top: 4rem;}
+
+    &--header{
+       
+            font-family: "Judson", serif;
+           font-style: italic;
+    font-size: 0.95em;
+    line-height: 1.4;
+        &--intro{
+            padding: 2rem;
+            opacity: 1;
+            background-color: $color-grey;
+            //color: white;
+        }
+    }
+    &--a{
+    display: block;
+    text-align: left;
+    text-emphasis: none;
+    margin-block-end: 1em;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    }/*
+
+  &--a::before{
+  content: '';
+  height: 8rem;
+  width: 3rem;
+  //margin-right: 2rem;
+  background-color: #bdbdbd;
+
+}*/
+
+    &--bc{
+        display: block;
+        letter-spacing: 0.2rem;
+        margin-block-end: 1em;
+        
+    }
+    &--b{
+      margin-block-start: 0.5rem;
+      margin-block-end: 0.5rem;
+      display: block;
+          
+    }
+    &--bs{
+       display: block;
+       margin-block-end: 0.5em;
+       letter-spacing: 0.2rem; 
+       font-weight: bold;
+    }
+
+    &--c{
+        //font-weight: lighter;
+        //display: inline-block;
+        //margin-block-end: 0.5em;
+        font-size: 0.875em;
+        line-height: 1.6;
+        text-emphasis: none;
+    }
+}
+
+
+.experiences{
+
+  position: relative;
+  z-index: 2;
+  //color: $primary;
+
+  h6{
+    margin-bottom: .5em;
+  }
+
+  .intro{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100vh;
+
+    padding-top: 200px;
+
+    /*@include media-breakpoint-down(sm) {
+      padding-top: 4rem;
+
+      padding-top: 150px;
+      min-height: auto;
+    }*/
+
+    /*@include media-breakpoint-up(xl) {
+      min-height: 55vh;
+    }*/
+
+    > h1 {
+      max-width: 14em;
+      //font-weight: $headings-font-weight;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+  .experiences-details,
+  .skillset-details{
+    h2{
+      margin-bottom: 0.3em;
+
+      + h4{
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+
+  .skillset-details{
+
+  }
+
+  /*@include media-breakpoint-down(sm) {
+    .experiences-details,
+    .skillset-details{
+      padding: 20px 0 80px;
+    }
+  }*/
+}
+

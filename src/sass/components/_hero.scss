@@ -1,0 +1,23 @@
+/* -- Heading with border -- */
+.hero-full-container{
+  min-height: 90vh;
+  background-color: $color-gold;
+  //background-color: #F2F8FB;
+
+
+.hero__context {
+  .hero__header{
+    color: $color-text;
+  }
+  p{
+    color: $color-white;
+  }
+ color: $color-white;
+  .hero__section {
+    margin-top: 20%;
+    @include respond(phone) {
+      margin-top: 50%;
+    }
+  }
+}
+}

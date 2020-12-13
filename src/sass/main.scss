@@ -1,0 +1,29 @@
+//import scss file
+/*Abstracts scss file*/
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+/*base scss files */
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'components/button';
+@import 'components/nav';
+@import 'components/hero';
+@import 'components/nav';
+@import 'components/footer';
+@import 'components/heading';
+@import 'components/about';
+@import 'components/education';
+@import 'components/icon';
+@import 'components/img';
+@import 'components/varticaltext';
+@import 'components/tabs';
+@import 'components/showProject';
+@import 'components/touchme';
+@import 'components/experience';
+@import 'components/project';
+/*pase scss files */
+@import 'pages/home';
+
