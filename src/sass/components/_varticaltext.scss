@@ -9,15 +9,21 @@
   color: yellowgreen;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-  float: left;
+  //float: left;
   margin-top: 18%;
   font-style: italic;
   margin-left: 5%;
+  //padding: 2rem;
   position: fixed;
   font-weight: bold;
   transition: all $transition-med $transition-ease;
   //position: relative;
-  
+  //pointer-events: none;
+
+  a{
+    text-decoration: none;
+    color: yellowgreen;
+  }
   @include respond(tab-port) {
     margin-top: 50%;
   }
@@ -25,32 +31,26 @@
 
 .jxlTta::after {
   display: block;
-  height: 3rem;
-  //background-color: $color-secondary-text;
-  background-color: $color-white;
+  height: 26rem;
   content: ' ';
+  background-color: yellowgreen;
   align-content: center;
   transform: translate(580%, 15rem);
   text-align: center;
-  //margin-left: -5%;
   width: 1px;
-  visibility: hidden;
+  pointer-events: auto;
   transition: all $transition-med $transition-ease;
-
 }
 
 .yyh::after {
   display: block;
-  height: 3rem;
-  //background-color: $color-secondary-text;
-  background-color: $color-white;;
-  content: ' ';
-  align-content: center;
-  transform: translate(575%, 15rem);
+  height: 26rem;
+   content: ' ';
+  background-color: yellowgreen;
+  transform: translate(580%, 15rem);
   text-align: center;
-  //margin-left: -5: 1px;
   width: 1px;
-  visibility: hidden;
+  transition: all $transition-med $transition-ease;
 }
 
 /*------vertical Text-------------*/
@@ -67,7 +67,8 @@
   writing-mode: vertical-rl;
   //float: left;
   margin-top: 18%;
-  margin-left: 95%;
+  margin-left: 92%;
+   //padding-right: 95rem;
   position: fixed;
   font-weight: bold;
 
@@ -86,7 +87,6 @@
   letter-spacing: 0.1em;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-  float: right;
   margin: 55%;
   position: fixed;
 }

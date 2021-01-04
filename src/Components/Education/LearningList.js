@@ -1,29 +1,20 @@
-//import React from 'react';
-import Education from "./Education";
-//import {LearningSub} from "./Learning";
 
+import React from "react";
+import Learning from "./Learning";
 
-export const LearningList = ({LearntSub}) => {
+export default function LearningList(props) {
+  const LearningList = props.data.map(event => (
+    <Learning
+      id={event.id}
+      year={event.year}
+      schoolName={event.schoolName}
+      qualification={event.qualification}
+    />
+  ));
+
     return (
         <div>
-            {
-                LearntSub.map((i) => {
-
-        return (
-        <Education                
-            key={i}
-            id={LearntSub[i].id}
-            year={LearntSub[i].year}
-            schoolName={LearntSub[i].schoolName}
-            qualification={LearntSub[i].qualification}
-            />
-        );       
-    })
-            }
+            {LearningList}
         </div>
-    );
+        );
 }
-
-export default LearningList;
-/*
-*/

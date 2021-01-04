@@ -1,26 +1,17 @@
 import React from 'react';
+import LearningList from "./LearningList";
+import { LearningData } from "./LearningData";
+import ContinouslyLearningList from "./ContinouslyLearningList";
+import { ContinouslyLearningData } from "./ContinouslyLearningData";
 import {
   developments,
   designs,
   ides,
   servers,
+  FrontEndWebDevelopments,
+  INPROGRESSLEARNINGs,
+  BackendWebDevelopments,
 } from './Skills';
-//import Learning from './Learning'
-/*
-function LearningsList(props) {
-  const Learnings = props.Learnings;
-  const listItems = Learnings.map(([Learning]) =>
-    <ul key={Learning.toString()}>
-      [{Learning}]
-    </ul>
-  );
-  return (
-    <p>{listItems}</p>
-  );
-}
-*/
-
-
 
 function DevelopmentsList(props) {
   const developments = props.developments;
@@ -30,7 +21,61 @@ function DevelopmentsList(props) {
     </ul>
   );
   return (
-    <p>{listItems}</p>
+    <div className='about--container'>
+      <span className='about--a'>DEVELOPMENT</span>
+      <p>{listItems}</p>
+    </div>
+  );
+}
+
+
+function FrontEndWebDevelopmentsList(props) {
+  const FrontEndWebDevelopments = props.FrontEndWebDevelopments;
+  const listItems = FrontEndWebDevelopments.map((FrontEndWebDevelopment) =>
+    <ul key={FrontEndWebDevelopment.toString()}>
+      {FrontEndWebDevelopment}
+    </ul>
+  );
+  return (
+    <div className='about--container'>
+      <span className='about--a'>Front End Web Development</span>
+      <p>{listItems}</p>
+    </div>
+  );
+}
+
+function BackendWebDevelopmentsList(props) {
+  const BackendWebDevelopments = props.BackendWebDevelopments;
+  const listItems = BackendWebDevelopments.map((BackendWebDevelopment) =>
+    <ul key={BackendWebDevelopment.toString()}>
+      {BackendWebDevelopment}
+    </ul>
+  );
+  return (
+    <div className='about--container'>
+      <span className='about--a'>Backend_Web_Development</span>
+      <p>{listItems}</p>
+    </div>
+  );
+}
+
+function INPROGRESSLEARNINGsList(props) {
+  const INPROGRESSLEARNINGs = props.INPROGRESSLEARNINGs;
+  const listItems = INPROGRESSLEARNINGs.map((INPROGRESSLEARNING) =>
+    <ul key={INPROGRESSLEARNING.toString()}>
+      {INPROGRESSLEARNING}
+    </ul>
+  );
+  return (
+    <div className='about--container'>
+      <span className='about--a'>IN PROGRESS LEARNING</span>
+      <p>{listItems}</p>
+      <hr className='divider' />
+      
+      <span className='about--a'>Deployment & Versioning</span>
+      <p>GitHub Pages, Heroku</p>
+      <p>Source Code Versioning Control - GIT</p>
+    </div>
   );
 }
 
@@ -42,7 +87,10 @@ function DesignList(props) {
     </ul>
   );
   return (
-    <p>{listItems}</p>
+    <div className='about--container'>
+      <span className='about--a'>DESIGN</span>
+      <p>{listItems}</p>
+      </div>
   );
 }
 
@@ -55,19 +103,27 @@ function IDEsList(props) {
     </ul>
   );
   return (
-    <p>{listItems}</p>
+    <div className='about--container'>
+      <span className='about--a'>IDEs</span>
+      <p>{listItems}</p>
+    </div> 
   );
 }
 
 function ServersList(props) {
   const servers = props.servers;
   const listItems = servers.map((server) =>
+    
     <ul key={server.toString()}>
       {server}
-    </ul>
+      </ul>
+      
   );
   return (
-    <p>{listItems}</p>
+    <div className='about--container'>
+      <span className='about--a'>Server</span>
+      <p>{listItems}</p>
+    </div>
   );
 }
 
@@ -85,97 +141,33 @@ const Education = ({ year, schoolName, qualification, id } ) => {
             <div className='row'>
               <h3 className='Heading-sc-3p94va-0 fGYjRx'>Education</h3>
               <div className='about--bg'>
+
                 <div className='col-1-of-3 bg'>
-                  
-                <span className='hero__paragraph heading'>
-                    &mdash;  Continously learning
-                </span>
-                  
-                 <div className='about--container'>
-                  <p className='hero__paragraph heading_two'>November 2013</p>
-                  <p className='about--b heading-tertiary'>Lugebhuta High School</p>
-                  <span className='hero__paragraph'>Matric (Grade 12) </span>
-                  </div>
-                  <div className='about--container'>
-                  <p className='hero__paragraph heading_two'>November 2014</p>
-                  <p className='about--b heading-tertiary'>CTI Education Group</p>
-                  <span className='hero__paragraph'>Certificate in Information Technology </span>
-                  </div>
-                  <div className='about--container'>
-                  <p className='hero__paragraph heading_two'>November 2017</p>
-                  <p className='about--b heading-tertiary'>CTI Education Group</p>
-                  <span className='hero__paragraph'>BSc in Information Technology</span>
-                </div>
+                  <span className='hero__paragraph heading'>Continously learning&mdash;</span>
+                  <LearningList data={LearningData} />
                   <hr className='divider' />
+                  <ContinouslyLearningList data={ContinouslyLearningData} />                 
+                </div>
 
-                  <div className='about--container'>
-                      <p className='hero__paragraph heading_two'>2018</p>
-                      <p className='about--b heading-tertiary'>Java Master class</p>
-                      <span className='hero__paragraph heading_tree'>By Tim Buchalka (Learn Promming)</span>
-                  </div>
-                  
-                  <div className='about--container'>
-                      <p className='hero__paragraph heading_two'>2019</p>
-                      <p className='about--b heading-tertiary'>PHP Master class</p>
-                      <span className='hero__paragraph heading_tree'>By Eduwin Diaz (CodingFaculty)</span>
-                  </div>
-                  
-                  <div className='about--container'>
-                      <p className='hero__paragraph heading_two'>2019</p>
-                      <p className='about--b heading-tertiary'>Web Developer Bootcamp</p>
-                      <span className='hero__paragraph heading_tree'>By Colt (Udemy)</span>
-                  </div>
-                  
-                  <div className='about--container'>
-                      <p className='hero__paragraph heading_two'>2020</p>
-                      <p className='about--b heading-tertiary'>Modern React with Redux Courses</p>
-                      <span className='hero__paragraph heading_tree'>by Stephen Grider (Udemy)</span>
-                  </div>
-                  
-                  
-              </div>
-
-              <div className='col-1-of-3 bg'>
-                <span className='hero__paragraph heading'> &mdash; Let’s see what he’s got.</span>
+                <div className='col-1-of-3 bg'>
+                  <span className='hero__paragraph heading'>Let’s see what he’s got&mdash;</span>
+                  <DevelopmentsList className='about--bs hero__paragraph' developments={developments} />
+                  <hr className='divider' />
+                  <FrontEndWebDevelopmentsList className='about--bs hero__paragraph' FrontEndWebDevelopments={FrontEndWebDevelopments} />
+                  <hr className='divider' />
+                  <BackendWebDevelopmentsList className='about--bs hero__paragraph' BackendWebDevelopments={BackendWebDevelopments} />
+                  <hr className='divider' />
+                  <ServersList className='about--bs hero__paragraph' servers={servers} />
+                </div>
                 
-                <div className='about--container'>
-                    <span className='about--a'>DEVELOPMENT</span>
-                    <DevelopmentsList  className='about--bs hero__paragraph' developments={developments} />
-                </div>
-
+                <div className='col-1-of-3 bg'>
+                  <span className='hero__paragraph heading'>Skillset&mdash;</span>
+                  <DesignList  className='about--bs hero__paragraph' designs={designs} />
                   <hr className='divider'/>
-
-                <div className='about--container'>
-                    <span className='about--a'>Server</span>
-                    <ServersList  className='about--bs hero__paragraph' servers={servers} />
-                </div>
-              
-              </div>
-              <div className='col-1-of-3 bg'>
-               <span className='hero__paragraph heading'>
-                  &mdash; Skillset
-                </span>
-
-                <div className='about--container'>
-                    <span className='about--a'>DESIGN </span>
-                    <DesignList  className='about--bs hero__paragraph' designs={designs} />
-                </div>
-
+                  <IDEsList className='about--bs hero__paragraph' ides={ides} />  
                   <hr className='divider'/>
-                   <div className='about--container'>
-                    <span className='about--a'>IDEs</span>
-                    <IDEsList  className='about--bs hero__paragraph' ides={ides} />
-                    <span className='about--bs heading-tertiary'>Source Code Versioning Control - GIT.GIT</span>
-                  </div>
-                  <hr className='divider'/>
-                  <div className='about--container'>
-                  <span className='about--a'>IN PROGRESS</span>
-                    <p>IN PROGRESS LEARNING .AWS – ANGULAR & FIREBASE
-                    APPLICATION TO RANDOMLY DISPLAY INSPIRATIONAL QUOTES
-                    </p>
+                  <INPROGRESSLEARNINGsList  className='about--bs hero__paragraph' INPROGRESSLEARNINGs={INPROGRESSLEARNINGs} />
                 </div>
-                  </div>
-                
 
               </div>
             </div>

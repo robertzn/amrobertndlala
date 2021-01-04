@@ -23,14 +23,13 @@ export const ShowProjects = () => {
                   <div className='ShowProjectDescriptionContainer'>
                     <div className='ShowProjectDescription--right'>
                       <p >
-                        <span>Intuitive markup</span>
+                        <span>Personal Website V1</span>
                       </p>
                       <p>
-                        A nicer look at your GitHub profile and 
-                        repository stats with data visualizations 
-                        of your top languages and stars. Sort 
-                        through your top repos by number of stars, 
-                        forks, and size.
+                        Personal Website V1
+                        Second iteration of my personal website. 
+                        Designed and developed with a conscious effort to a
+                        void using any superfluous frameworks like Bootstrap.
                       </p>
                     </div>
                   </div>
@@ -55,16 +54,21 @@ export const ShowProjects = () => {
                    
                     <div className='ShowProjectDescription--left'>
                       <p>
-                        <span>Intuitive markup</span>
+                        <span>Business card</span>
                       </p>
                       <p>
-                        A web app for visualizing personalized 
-                        Spotify data. View your top artists, 
-                        top tracks, recently played tracks, and 
-                        detailed audio information about each track. 
-                        Create and save new playlists of recommended 
-                        tracks based on your existing playlists 
-                        and more.
+                        The business cards were
+                        printed on a 520gsm cotton
+                        stock, printed by Stitch Press.
+                        The concept was created and
+                        briefed into a Melbourne based
+                        designer, Lachlan Philp for
+                        the custom caligraphy to be
+                        created.
+                        The holographic foiling catches
+                        light, giving the card a varying
+                        finish depending on the angle
+                        it is viewed.
                       </p>
                     </div>
                   </div>
@@ -76,7 +80,7 @@ export const ShowProjects = () => {
                   <div className='ShowProjectDescriptionContainer'>
                     <div className='ShowProjectDescription--right'>
                       <p>
-                        <span>Intuitive markup</span>
+                        <span>IDEs</span>
                       </p>
                       <p>
                         A minimal, dark blue theme for VS Code, 

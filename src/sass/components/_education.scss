@@ -2,9 +2,15 @@
     &--education {
       padding-top: 7rem;
       color: $color-gold;
-      background-image: url(../../images/dio.svg);
-      background-repeat: repeat;
+      /*background-image: url(../../images/bg/title-bar-01-bg.jpg);
+      background-repeat: no-repeat;
       background-attachment:fixed;
+      background-repeat: no-repeat;
+      background-position: top 50% right  50%;*/
+      background-color: rgb(244, 239, 233) ;
+
+      background-size: cover;
+      font-family: 'Roboto', OpenSans, 'Open Sans', Arial, sans-serif;
 
  
       p{font-weight: bold;}
@@ -36,7 +42,7 @@
       }
 
       .heading{
-        font-style: italic;
+        //font-style: italic;
       }
 
 
@@ -72,7 +78,7 @@
 
           p{
             //margin-right: 20%;
-            text-align: left;
+            //text-align: left;
             animation-name: moveInLeft;
             animation-duration: 1s;
             animation-timing-function: ease-out;
@@ -116,6 +122,7 @@
     margin-block-end: 1em;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
+    line-height: 2;
     text-transform: uppercase;
     }/*
 

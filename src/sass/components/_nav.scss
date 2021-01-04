@@ -4,6 +4,7 @@
   grid-column: center-start/center-end;
   grid-row: 1/2;
   display: flex;
+  position: fixed;
 }
 .nav-top {
   display: flex;
@@ -171,6 +172,7 @@ input[type='checkbox']:checked ~ #menu {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     width: 100%;
+    position: fixed;
   }
 
   /*Create vertical spacing*/
@@ -235,4 +237,5 @@ input[type='checkbox']:checked ~ #menu {
 
 .section {
   border-bottom: 2px solid $color-gold;
+  position: fixed;
 }

@@ -2,15 +2,11 @@
   backface-visibility: hidden;
   &--main {
     display: block;
-    //font-size: 5.5rem;
     font-weight: 400;
     letter-spacing: 0.5rem;
-    //color: $color-gold;
     line-height: 1.2;
     -webkit-text-stroke: 0.05rem $color-white;
     color: transparent;
-    //text-transform: uppercase;
-    //font-family: 'Poppins', sans-serif;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -27,7 +23,6 @@
     text-transform: uppercase;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
-    //color: $color-gold;
     @include respond(phone) {
       letter-spacing: 0.5rem;
     }
@@ -42,7 +37,6 @@
   margin-block-start: 1em;
   margin-block-end: 1em;
   font-weight: bold;
-  //color: $color-primary-text;
   color: $color-gold;
   font-family: 'Poppins', sans-serif;
   animation-name: moveInLeft;
@@ -60,13 +54,10 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  //color: $color-gold;
 }
 
 .heading-secondary {
-  //font-size: 3.5rem;
   text-transform: uppercase;
-  //font-weight: 700;
   display: inline-block;
   background-image: linear-gradient(
     to right,
@@ -119,7 +110,6 @@
 .text-context {
   position: relative;
   color:$color-text;
-  //color: $color-gold;
 }
 .text-context:before {
   content: '';
@@ -148,14 +138,11 @@ h5 {
   text-align: left;
   margin-bottom: 30px;
   letter-spacing: 1px;
-  // color: #f7eeeed3 !important;
-  //color: $color-primary;
 }
 
 h5::before {
   display: block;
   height: 0px;
-  //background-color: #61dafb;
   content: ' ';
   width: 150px;
   margin: 0;
@@ -164,7 +151,6 @@ h5::before {
 
 h3 {
   display: block;
-  //font-size: 2.17em;
   font-size: 1.425em;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -187,24 +173,9 @@ h3 {
 
 p {
   font-size:  0.925em;
-  //font-size: 0.925em;
-  //margin-block-start: 1.67em;
-  //margin-block-end: 1.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-
-
-
-  //display: block;
-  //margin-block-start: 1em;
-  //margin-block-end: 1em;
-  /*margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-size: 1.7rem;
-  line-height: 1.5;
-  max-width: 42em;*/
   color: $color-gold;
-  //color: $color-white;
 }
 
 a {
@@ -221,28 +192,14 @@ a {
   margin: 10px 0px 40px;
   color: $color-gold;
   font-size: 3.5rem;
-  //font-family: "Judson", serif;
-  //font-style: italic;
 }
-/*
-.fGYjRx::before {
-  counter-increment: section 1;
-  content: '0' counter(section) '.';
-  margin-right: 10px;
-  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
-    'Lucida Console', Monaco, monospace;
-  font-weight: normal;
-  color: $color-secondary-light;
-  font-size: 20px;
-  position: relative;
-  bottom: 4px;
-}*/
+
 
 .fGYjRx::after {
   content: '';
   display: block;
-  height: 0.2rem;
-  width: 50%;
+  height: 1px;
+  width: 25%;
   background-color: $color-gold;
   position: relative;
   top: -2px;

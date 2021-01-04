@@ -1,27 +1,34 @@
 
 .about {
-
   &--education {
-
-
     &--intro {
-      height: 90vh;
-      background-color:  $color-gold;
-      /*background-image: url(../../images/x.svg);
-      background-size: cover;
+      height: 100%;
+      background-color: $color-gold;
+      //background-image: url(../../images/mitech-processing-contact-bg.png), linear-gradient($color-gold, #09255E);
+      background-image: url(../../images/mitech-processing-contact-bg.png);
+      background-size:auto;
       background-repeat: no-repeat;
-      //background-attachment: fixed;
-      //background: $color-gold;*/
+      background-attachment: fixed;
+      color: $color-white;
+      p{text-align: center;}
+      h3{text-align: center;}
 
-        color: $color-white;
+      .jxlTta::after {height: 32rem;}
 
-        @include respond(phone) {
-          margin-top: 10%;
-          max-height: 100%;
-          background-color:  $color-gold;
-        }
+      .yyh::after {height: 32rem;}
 
-
+      hr.divider {
+        background: $color-white;
+        width: 65px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @include respond(phone) {
+        margin-top: 10%;
+        max-height: 100%;
+        background-color:  $color-gold;
+      }
     }
   }
 }

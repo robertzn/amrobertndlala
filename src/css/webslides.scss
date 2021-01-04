@@ -48,6 +48,7 @@ html {
 *,
 *::before,
 *::after {
+  pointer-events: auto;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -271,8 +272,8 @@ footer:after,
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  //overflow-x: hidden;
+  //overflow-y: scroll;
 }
 #webslides::-webkit-scrollbar {
   display: none;
@@ -1108,6 +1109,7 @@ footer,
   transition: all 0.4s ease-in-out;
   width: 100%;
   background-color: #fff;
+  position: fixed;
 }
 
 header p,

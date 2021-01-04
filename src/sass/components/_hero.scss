@@ -1,9 +1,12 @@
 /* -- Heading with border -- */
 .hero-full-container{
   min-height: 90vh;
+  
   background-color: $color-gold;
   //background-color: #F2F8FB;
-
+  a{
+    text-decoration: none;
+  }
 
 .hero__context {
   .hero__header{

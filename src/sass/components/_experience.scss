@@ -8,9 +8,9 @@
   width: 75%;
   //background: rgb(40, 44, 52);
   transform: translate(15%, 0%);
-  .fGYjRx {color: $color-white;}
+  .fGYjRx {
+    color: $color-white;}
   .fGYjRx::after{
-    width: 100%;
     background-color: $color-white;
   }
   @include respond(tab-port) {

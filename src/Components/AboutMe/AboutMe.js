@@ -1,5 +1,6 @@
 import React from 'react';
 import myPhoto from '../../images/robb.jpg';
+import { MdRadioButtonChecked } from 'react-icons/md';
 const AboutMe = (props) => {
   return (
     <div>
@@ -12,10 +13,51 @@ const AboutMe = (props) => {
                 <p className='hero__paragraph'>{props.greeting}</p>
                 <p className='hero__paragraph'>{props.introAboutMe}</p>
                   <p className='hero__paragraph'>Shortly after graduating from
-                  <a className="btn-text" href='https://www.pearsoninstitute.africa'> cti education group </a> I joined a software development team at
-                  <a className="btn-text" href='https://www.emalangenitech.co.za/'> Emalangeni Technologies</a> where I work on a wide variety of interesting and
+                  <a className="btn-text" target="_blank" href='https://www.pearsoninstitute.africa' rel="noreferrer" > cti education group </a> I joined a software development team
+                    at <a className="btn-text" target="_blank" href='https://www.emalangenitech.co.za/' rel="noreferrer">  Emalangeni Technologies</a> where I worked on a wide variety of interesting and
                   meaningful projects on a daily basis.
                   </p>
+                 <span className='secondary-heading'>
+                  Here are a few technologies I've been working with recently:
+                </span>
+                   <div className='skills'>
+                  <div className='about-skill'>
+                    <span className='skill-item'>
+                      {' '}
+                      <MdRadioButtonChecked /> JavaScript (ES5
+                      +)
+                    </span>
+                    <span className='skill-item'>
+                      <MdRadioButtonChecked />
+                      React
+                    </span>
+                  </div>
+                  <div className='about-skill'>
+                    <span className='skill-item'>
+                      <MdRadioButtonChecked /> Angular
+                    </span>
+                    <span className='skill-item'>
+                      <MdRadioButtonChecked /> PHP
+                    </span>
+                  </div>
+                  <div className='about-skill'>
+                    <span className='skill-item'>
+                      <MdRadioButtonChecked /> Java
+                    </span>
+                    <span className='skill-item'>
+                      <i class='fas fa-play'></i>
+                      <MdRadioButtonChecked /> HTML5
+                    </span>
+                  </div>
+                  <div className='about-skill'>
+                    <span className='skill-item'>
+                      <MdRadioButtonChecked /> Node.js
+                    </span>
+                    <span className='skill-item'>
+                     <MdRadioButtonChecked /> (S)CSS
+                    </span>
+                  </div>
+                </div>
               </div>
               
               <div className='col-1-of-2 my__p-c'>

@@ -112,8 +112,9 @@ export default class Experience extends PureComponent {
                           <MdRadioButtonChecked />
                           </span>
                           <p className='hero__paragraph'>
-                            Write modern, performant, maintainable code for a 
-                            diverse array of client and internal projects
+                            Design and Maintain Dashboard Applications that can be hosted on 
+                            local servers/ Remote servers using variety of different 
+                            languages such HTML, CSS, Sass, JavaScript, jQuery, and PHP
                           </p>
                         </li>
                         <li className='tab-primary--description--sub'>
@@ -121,11 +122,8 @@ export default class Experience extends PureComponent {
                           <MdRadioButtonChecked />
                           </span>
                           <p className='hero__paragraph'>
-                            Work with a variety of different languages, platforms, frameworks, 
-                            and content management systems such as JavaScript, TypeScript, 
-                            HTML5, CSS3, AngularJS, foundation, SASS, RequireJS, React, NodeJS,
-                            Communicate with multi-disciplinary teams of engineers, designers, producers, 
-                            and clients on a daily basis
+                            To maintain/create websites including updating all of 
+                            OPEX websites and domains / New or Existing clients.
                           </p>
                         </li>
                         <li className='tab-primary--description--sub'>
@@ -133,11 +131,23 @@ export default class Experience extends PureComponent {
                           <MdRadioButtonChecked />
                           </span>
                           <p className='hero__paragraph'>
-                            Worked with a team of three creative and 
-                            detail-oriented graphic designer to build 
-                            marketing websites and digital brand management, 
-                            such as logo design, Business card, and layout design
-                            Adobe suite, such as XD, Photoshop and Illustrator.
+                            Implement Analytics received from a Local Server /Data source
+                          </p>
+                        </li>
+                        <li className='tab-primary--description--sub'>
+                          <span className='icon'>
+                          <MdRadioButtonChecked />
+                          </span>
+                          <p className='hero__paragraph'>
+                            Allow growth on the dashboard for other integrations of Applications
+                          </p>
+                        </li>
+                        <li className='tab-primary--description--sub'>
+                          <span className='icon'>
+                          <MdRadioButtonChecked />
+                          </span>
+                          <p className='hero__paragraph'>
+                            To offer support and training on developed applications to clients.
                         </p>
                         </li>                        
                       </ul>                                     

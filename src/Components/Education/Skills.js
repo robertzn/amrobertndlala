@@ -1,55 +1,44 @@
 //import React from "react";
 
 export const developments = [
-    'HTML', 'SASS', 'Bootstrap',
-    'Javascript', 'Node.js', 'React',
-    'Angular', 'GraphQL', 'PHP',
-    'JSON', 'JQuery', 'AJAX', 'Java'
+    'OOP concepts.', 'MVC pattern',
+    'Java (EE & Basic Spring)', 'Basic C#',
+    'Basic Android',  
 ];
 
+export const FrontEndWebDevelopments = [
+    
+    'HTML & (S)CSS', 'Bootstrap', 'React Hooks', 'Angular',
+    'Javascript (ES+)', 'DOM Manipulation', 'Keyword Research SEO', 
+];
+
+export const BackendWebDevelopments = [
+    
+    'Node.js',  'NativeScript', 'Express', 'RESTful JSON API',
+     'GraphQL', 'PHP (Laravel)', 'NPM', '',
+    'JSON', 'JQuery', 'AJAX',   
+];
+
+
 export const designs = [
-    'Illustrator', 'Photoshop', 'XD (Prototype)',
+    'Illustrator', 'Photoshop', 'XD (UI/UX)',
     'Wireframes', 'Balsamiq mockups'
 ];
 
 export const ides = [
-    'PhpStorm', 'WebStorm', 'webstorm',
-    'Scene Builder', 'Visual Studio & code', 'Android Studio'
+    'PhpStorm', 'WebStorm', 'Intellij IDEA,',
+    'Sublime', 'Notepad++', 'Netbeans',
+    'Scene Builder', 'Visual Studio & code',
+    'Android Studio', 'Atom','Eclipse IDE'
 ];
 
 export const servers = [
-    'PhpStorm', 'WebStorm', 'webstorm',
-    'Scene Builder', 'Visual Studio & code', 'Android Studio', 'Microsoft SQL Server'
+    'MySQL', 'MongoDB', 'Oracle SQ',
+    'Microsoft SQL Server', 'SQL'
 ];
-/*
-export const Learnings = [
-    {
-        id: 1,
-        Year: 'November 2013',
-        SchoolName: 'Lugebhuta High School',
-        qualification: 'Matric (Grade 12) '
-    },
 
-    {
-        id: 1,
-        Year: 'November 2014',
-        SchoolName: 'CTI Education Group',
-        qualification: 'Certificate in Information Technology'
-    },
-    {
-        id: 1,
-        Year: 'November 2017',
-        SchoolName: 'CTI Education Group',
-        qualification: 'BSc in Information Technology'
-    },
-
-    {
-        id: 1,
-        Year: 'November 2017',
-        SchoolName: 'CTI Education Group',
-        qualification: 'BSc in Information Technology'
-    },
-
-];*/
-
-
+export const INPROGRESSLEARNINGs = [
+    'AWS', 'FIREBASE', 'Meteor.js',
+    'graphql', 'Gatsby JS', 'Shopify'
+    
+];

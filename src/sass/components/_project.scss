@@ -1,42 +1,36 @@
 .project-features {
-  
-      //background-image: url(../../images/bg.svg);
-      //background-size: cover;
-      //background-repeat: no-repeat;
-      ///background-attachment:fixed;
-      background-image: url(../../images/dio.svg);
-      //background-size: contain;
-      background-repeat: repeat;
-      background-attachment:fixed;
-      margin-top: 2rem;
-      
-      //background-color:$color-grey;
-      
-  //padding-top: 5rem;
-  /*transform: skewY(-2deg);
+  background-image: url(../../images/dio.svg);
+  background-repeat: repeat;
+  background-attachment:fixed;
+  .crd{
 
-  & > * {
-    transform: skewY(2deg);
-  }*/
-  //color: #fff;
+    margin-top: 8rem;
+
+    @include respond(tab-port) {
+      margin-top: 0rem;
+    }
+    .row {
+      [class^='col-'] {
+        &:not(:last-child) {
+          margin-right: 4rem;
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }   
   .project__container {
     display: table;
-    width: 100%;
-    
+    width: 100%;  
   }
 }
 
 .feature-box {
-  //background-color: $color-grey;
   position: relative;
   font-size: 1.5rem;
   padding: 1.5rem;
-  //padding: 1.5rem;
   border-radius: 0px;
-  display: table-cell;
-  height: 22em;
-  //border: 2px solid $color-gold;
-  background-color: $color-grey;
+  background-color: #fff;
+  border: 1px dashed  $color-gold;
   color: $color-gold;
   text-align: center;
   @include respond(tab-port) {
@@ -44,8 +38,8 @@
   }
 
   .feature-box__text {
-    //text-align: left;
-    padding: 2rem;
+    padding: 1rem;
+    border-bottom: 1px dashed $color-gold;
   }
 
   .show--project {
@@ -57,28 +51,16 @@
     color: $color-gold;
     z-index: 100;
   }
-/*
-  .show--project {
-    position: absolute;
-    transform: translate(-1%, -70%);
-    left: 100;
-    right: 0;
-    padding: 0rem;
-    color: $color-gold;
-    z-index: 100;
-  }*/
+
   .show-hide-project {
     display: block;
   }
 
   &--icon {
     width: 5rem;
-    //font-size: 6rem;
     margin-bottom: 0.5rem;
     display: inline-block;
-    -webkit-background-clip: text;
     color: transparent;
-
     @include respond(tab-port) {
       margin-bottom: 0;
     }
@@ -86,10 +68,12 @@
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
-    //background-color: $color-primary;
-    //opacity: 1;
-    background-color: $color-grey;
-    border: 2px solid $color-gold;
+    //background-color: $color-grey;
+    border: 1px solid $color-gold;
+    background-image: url(../../images/bg/title-bar-01-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
   }
 
   .project-progrmming-l {
@@ -100,13 +84,10 @@
     text-align: center;
     padding: 0;
     margin: 0 auto;
-    //transform: translate(2%, 80%);
 
     .btn--full {
       background-color: $color-gold;
-      border: 1px solid $color-gold;
-      //color: #fff;
-      //font-style: italic;
+      border: 1px solid $color-gold;;
     }
   }
 }
@@ -116,9 +97,4 @@
   padding: 0;
   margin-top: 7rem;
 }
-/*
-.feature-box__btn__view {
-  text-align: center;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-}*/
+
