@@ -1,5 +1,5 @@
 import React from 'react';
-import myPhoto from '../../images/robb.jpg';
+import myPhoto from '../../images/me.jpg';
 import { MdRadioButtonChecked } from 'react-icons/md';
 const AboutMe = (props) => {
   return (
@@ -13,8 +13,8 @@ const AboutMe = (props) => {
                 <p className='hero__paragraph'>{props.greeting}</p>
                 <p className='hero__paragraph'>{props.introAboutMe}</p>
                   <p className='hero__paragraph'>Shortly after graduating from
-                  <a className="btn-text" target="_blank" href='https://www.pearsoninstitute.africa' rel="noreferrer" > cti education group </a> I joined a software development team
-                    at <a className="btn-text" target="_blank" href='https://www.emalangenitech.co.za/' rel="noreferrer">  Emalangeni Technologies</a> where I worked on a wide variety of interesting and
+                  <a className="btn-text" target="_blank" href='http://www.pearsoninstitute.africa' rel="noreferrer" > cti education group </a> I joined a software development team
+                    at <a className="btn-text" target="_blank" href='http://www.emalangenitech.co.za/' rel="noreferrer">  Emalangeni Technologies</a> where I worked on a wide variety of interesting and
                   meaningful projects on a daily basis.
                   </p>
                  <span className='secondary-heading'>

@@ -76,8 +76,7 @@ const App = (props) => {
                              producing highly interactive interfaces and pairing high
                              quality design, being pixel perfect, while meeting the
                              highest quality standards of development'
-                     headerThree='I’ve always been to fully immerse myself to any working
-                               environment which I show through work ethic and commitment, whether
+                     headerThree='I always fully immerse myself to any working environment which I show through work ethic and commitment, whether
                                it be working closely within a team or being delligated a list of
                                individual tasks, it is always important to me that I
                                deliver the highest quality standard of work.'
@@ -131,6 +130,7 @@ const App = (props) => {
                        <label htmlFor="show-menu" className="show-menu">
                          <div className="nav-icon"></div>
                        </label>
+                       
                        <img
                            src={Logo}
                            alt="Robert logo"

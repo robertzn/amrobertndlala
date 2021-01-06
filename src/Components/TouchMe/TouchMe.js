@@ -12,7 +12,7 @@ const TouchMe = () => {
                 <p className='text-intro'>
                   I'm currently looking for new software development
                   opportunities, my inbox is always open, whether you have a
-                  question or just want to say hi, I'll try my best to get back to
+                  question or just want to say hi, I'll get back to
                   you!.
                 </p>
               </div>

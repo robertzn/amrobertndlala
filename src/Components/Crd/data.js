@@ -2,7 +2,7 @@ export let eventsData = [
   {
     id: 0,
     project: "http://thecoredraughts.co.za/",
-    title: "Build websites with HTML & CSS",
+    title: "Thecoredraughts websites",
     location: "Available Online",
     description:
         "Real-World websites",
@@ -12,7 +12,7 @@ export let eventsData = [
   {
     id: 1,
     project: "http://igtech.co.za/richdad/",
-    title:'Front-End Web Development',
+    title:'Richdad Networkes',
     location: "Available Online",
     description: "Real-World websites",
     tech:
@@ -21,16 +21,16 @@ export let eventsData = [
   {
     id: 2,
     project: "http://www.realted.co.za/",
-    title:'E-Commerce Website',
+    title:'Realted Website',
     location: "Available Offline",
-    description: "Real-World E-Commerce",
+    description: "Real-World",
     tech:
         "HTML, CSS, JavaScript, PHP & MySQL .",
   },
   {
     id: 3,
     project: "/Robert-Ndlala-Profile.pdf",
-    title:'Java application',
+    title:'Loan System',
     location: "Available Offline",
     description:
       "Real-World Loan System",
@@ -40,17 +40,17 @@ export let eventsData = [
   {
     id: 4,
     project: "/Robert-Ndlala-Profile.pdf",
-    title: "Angular applications",
+    title: "Management System",
     location: "Available Offline",
     description:
       "Real-World Company Management",
     tech:
-        "TypeScript, RESTful, SQL Server",
+        "Angular, TypeScript, RESTful, SQL Server",
   },
   {
     id: 5,
     project: "/Robert-Ndlala-Profile.pdf",
-    title: "Java application",
+    title: "Java POS System",
     location: "Available Offline",
     description:
       "Real-World POS System",
@@ -80,7 +80,7 @@ export let eventsData = [
   {
     id: 8,
     project: "/Robert-Ndlala-Profile.pdf",
-    title: "PHP Web application",
+    title: "ILG System",
     location: "Available Offline",
     description:
       "Real-World ILG System.",
