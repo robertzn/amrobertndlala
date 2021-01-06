@@ -19,6 +19,7 @@
   transition: all $transition-med $transition-ease;
   //position: relative;
   //pointer-events: none;
+  text-decoration: none;
 
   a{
     text-decoration: none;
@@ -31,7 +32,7 @@
 
 .jxlTta::after {
   display: block;
-  height: 26rem;
+  height: 31rem;
   content: ' ';
   background-color: yellowgreen;
   align-content: center;
@@ -44,7 +45,7 @@
 
 .yyh::after {
   display: block;
-  height: 26rem;
+  height: 31rem;
    content: ' ';
   background-color: yellowgreen;
   transform: translate(580%, 15rem);
@@ -62,6 +63,7 @@
   letter-spacing: 0.1em;
   //color: $color-secondary-text;
   //color: $color-white;
+  text-decoration: none;
   color: yellowgreen;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
