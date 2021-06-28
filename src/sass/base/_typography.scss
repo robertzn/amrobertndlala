@@ -5,8 +5,8 @@
     font-weight: 400;
     letter-spacing: 0.5rem;
     line-height: 1.2;
-    -webkit-text-stroke: 0.05rem $color-white;
-    color: transparent;
+    //-webkit-text-stroke: 0.05rem $color-white;
+    color: #ddd;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -198,11 +198,11 @@ a {
 .fGYjRx::after {
   content: '';
   display: block;
-  height: 1px;
-  width: 25%;
+  height: 2px;
+  width: 35%;
   background-color: $color-gold;
   position: relative;
-  top: -2px;
+  top: 0px;
   margin-left: 1px;
 }
 

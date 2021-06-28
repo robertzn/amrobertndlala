@@ -6,8 +6,6 @@ const Heading = (props)  => {
         <div>
             
             <div className='about--education--intro'>
-                <span className='jxlTta'>+27 (0)71 285 2172</span>
-                <span className='yyh'>+27 (0)81 370 0463</span>
                 <section className='heading-primary fadeInUp '>
                     <div className='bg-gradient-v wrap size-80'>
                         <div className='row'>

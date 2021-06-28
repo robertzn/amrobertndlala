@@ -19,6 +19,13 @@
     }
   }
 
+  .hero__paragraph{
+    @include respond(phone) {
+      float: left;
+    }
+    
+  }
+
 
   .jxlTta{
     display: none;

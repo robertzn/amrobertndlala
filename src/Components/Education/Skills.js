@@ -15,7 +15,7 @@ export const FrontEndWebDevelopments = [
 export const BackendWebDevelopments = [
     
     'Node.js',  'NativeScript', 'Express', 'RESTful JSON API',
-     'GraphQL', 'PHP (Laravel)', 'NPM', '',
+     'GraphQL', 'PHP', 'NPM', '',
     'JSON', 'JQuery', 'AJAX',   
 ];
 

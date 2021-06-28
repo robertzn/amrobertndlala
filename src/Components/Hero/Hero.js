@@ -3,12 +3,6 @@ import React from 'react';
 const Hero = (props) => {
   return (
     <div className='hero-full-container'>
-      <a className='jxlTta fadeInUp' href="tel:0712852172">
-        +27 (0)71 285 2172
-      </a>
-      <a className='yyh fadeInUp' href="tel:+27813700463">
-        +27 (0)81 370 0463
-      </a>
       <div className='hero__context'>
         <section className='heading-primary fadeInUp '>
           <div className='bg-gradient-v wrap size-80'>

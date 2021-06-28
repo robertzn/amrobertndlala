@@ -22,7 +22,7 @@ class Footer  extends React.Component {
                 Don't be shy.
             </h4>
               <h1 className='secondary-heading-lnger'>
-                © Robert Ndlala. 2021
+                PORTFOLIO
             </h1>
             </div>
 
@@ -30,7 +30,7 @@ class Footer  extends React.Component {
               <div className='iner'>
                 <h3 className='important__links'>Important Links!</h3>
                 <p className='hero__paragraph'>
-                  PORTFOLIO
+                  Download / Contact
             </p>
               
                 <a className='secondary-heading-lnger button' href="https://wa.me/+2771285212" target="_blank" rel="noreferrer">
@@ -45,6 +45,10 @@ class Footer  extends React.Component {
               </a>
                 
                 <a className='secondary-heading-lnger button' href="mailto:robert.ndlala@gmail.com" target="_blank" rel="noreferrer">
+                  Request Download Certificates (pdf)
+              </a>
+
+              <a className='secondary-heading-lnger button' href="mailto:robert.ndlala@gmail.com" target="_blank" rel="noreferrer">
                   Request Download Certificates (pdf)
               </a>
               </div>

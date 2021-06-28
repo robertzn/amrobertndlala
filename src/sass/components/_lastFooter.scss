@@ -1,0 +1,100 @@
+.lastFooter {
+  padding-bottom: 3rem;
+  text-align: left;
+  background-color: #9A12B3;
+  background-image: linear-gradient(to right, #594dff, #282c34);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ddd;
+  height: 3% !important;
+  margin-bottom: -10rem;
+  h1 {
+    margin-top: 9%;
+    color: #ddd;
+    margin-bottom: -3%;
+    @include respond(phone) {
+      float: left;
+      margin-top: 15%;
+    }
+  }
+
+  .phone {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  a {
+    //margin-top: 1rem;
+    float: right;
+    color: #ddd;
+    text-decoration: none;
+    @include respond(phone) {
+      margin-top: 0;
+    }
+  }
+
+  .jxlTta {
+    display: none;
+  }
+  @include respond(phone) {
+    //margin-top: 20%;
+  }
+
+  /*
+
+  a{
+    transition: all $transition-med $transition-ease;
+    transform: translate(0%, 120px);
+    &:hover{
+      text-decoration: none;
+    }
+    &:not(.button){
+      &:hover{
+        // color: lighten($primary, 25%);
+        color: darken(#FFF, 20%);
+      }
+    }
+  }*/
+
+  /*
+
+  .button{
+    $button-size: 20px;
+    transition: all $transition-med $transition-ease;
+    position: relative;
+    transform: translateX(0px);
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.925em;
+
+
+    &:before{
+      content: '';
+      display: block;
+      height: 2px;
+      background: $color-white;
+      width: 0;
+      line-height: $button-size;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      margin: auto;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(0px);
+      transition: all $transition-med $transition-ease;
+    }
+
+    &:hover{
+      transform: translateX(40px);
+      &:before{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-40px);
+        width: $button-size;
+      }
+    }
+  }*/
+}

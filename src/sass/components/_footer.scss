@@ -9,14 +9,14 @@ footer {
   //border-top: 2px solid #ddd;
   //border-top: 2px solid #fff;
   color: #011ccc;
-  background-color:rgb(244, 239, 233) ;
+  background-color: #ddd;
   overflow: hidden;
   background-image: url("../../images/footer-background.svg");
   
   /*background-image: url(../../images/footer.svg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment:fixed;*/
+  background-repeat: no-repeat;*/
+  background-attachment:fixed;
   width: 100%;
   grid: auto-flow / 1fr 1fr 1fr;
   margin-bottom: -5rem;

@@ -1,90 +1,74 @@
 export let eventsData = [
   {
     id: 0,
-    project: "http://thecoredraughts.co.za/",
-    title: "Thecoredraughts websites",
+    project: "https://igtech.co.za/l/index.php",
+    title: "Building construction",
     location: "Available Online",
-    description:
-        "Real-World websites",
-    tech:
-        "HTML, CSS, JavaScript & SVG",
+    description: "Real-World websites",
+    tech: "HTML, CSS, JavaScript & SVG",
   },
   {
     id: 1,
     project: "http://igtech.co.za/richdad/",
-    title:'Richdad Networkes',
+    title: "Richdad Networkes",
     location: "Available Online",
     description: "Real-World websites",
-    tech:
-        "HTML5, CSS3, JavaScript, jQuery & SVG",
+    tech: "HTML5, CSS3, JavaScript, jQuery & SVG",
   },
   {
     id: 2,
     project: "http://www.realted.co.za/",
-    title:'Realted Website',
+    title: "Realted Website",
     location: "Available Offline",
     description: "Real-World",
-    tech:
-        "HTML, CSS, JavaScript, PHP & MySQL .",
+    tech: "HTML, CSS, JavaScript, PHP & MySQL .",
   },
   {
     id: 3,
     project: "/Robert-Ndlala-Profile.pdf",
-    title:'Loan System',
+    title: "Loan System",
     location: "Available Offline",
-    description:
-      "Real-World Loan System",
-    tech:
-        "Java 11/Java EE, MySQL",
+    description: "Real-World Loan System",
+    tech: "Java 11/Java EE, MySQL",
   },
   {
     id: 4,
-    project: "/Robert-Ndlala-Profile.pdf",
+    project: "https://www.ockarsoft.com/",
     title: "Management System",
     location: "Available Offline",
-    description:
-      "Real-World Company Management",
-    tech:
-        "Angular, TypeScript, RESTful, SQL Server",
+    description: "Real-World Company Management",
+    tech: "Angular, TypeScript, RESTful, SQL Server",
   },
   {
     id: 5,
-    project: "/Robert-Ndlala-Profile.pdf",
-    title: "Java POS System",
+    project: "https://igtech.co.za/thecore/",
+    title: "Thecoredraughts websites",
     location: "Available Offline",
-    description:
-      "Real-World POS System",
-    tech:
-        "Java 11/Java EE, MySQL",
+    description: "css, json, ajax, and html, jQuery",
+    tech: "HTML, SASS, JavaScript & SVG",
   },
   {
     id: 6,
-    project: "http://igtech.co.za/preview/",
-    title:'UI / UX Design',
+    project: "https://igtech.co.za/ock/",
+    title: " Ockarsoft UI / UX Design",
     location: "Available Online",
-    description:
-      "Prototype.",
-    tech:
-        "HTML & CSS.",
+    description: "Prototype.",
+    tech: "HTML, JS, Bootstrap, Css, Sass",
   },
   {
     id: 7,
-    project: "/Robert-Ndlala-Profile.pdf",
-    title: "React",
-    location: "Available Offline",
-    description:
-      "React, Redux, Express, and Mongo.",
-    tech:
-        "React, Redux, Express, and Mongo.",
+    project: "https://www.igtech.co.za/timesheet/Admin-Full/auth-login.php",
+    title: "Time Sheet Dashboard",
+    location: "Available online",
+    description: "Real-World",
+    tech: "css, json, ajax, and html, jQuery",
   },
   {
     id: 8,
-    project: "/Robert-Ndlala-Profile.pdf",
+    project: "https://igtech.co.za/ilg/admin/login.php",
     title: "ILG System",
     location: "Available Offline",
-    description:
-      "Real-World ILG System.",
-    tech:
-        "HTML, CSS, JS, AJAX, PHP, MySQL .",
-  }
+    description: "Real-World ILG System.",
+    tech: "HTML, CSS, JS, AJAX, PHP, MySQL .",
+  },
 ];

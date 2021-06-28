@@ -29,10 +29,11 @@
   font-size: 1.5rem;
   padding: 1.5rem;
   border-radius: 0px;
-  background-color: #fff;
-  border: 1px dashed  $color-gold;
+  background-color: #ddd;
+  border: 1px dashed  #ddd;
   color: $color-gold;
   text-align: center;
+  border-radius: 2px;
   @include respond(tab-port) {
     padding: 2rem;
   }
@@ -70,7 +71,7 @@
     transform: translateY(-1.5rem) scale(1.03);
     //background-color: $color-grey;
     border: 1px solid $color-gold;
-    background-image: url(../../images/bg/title-bar-01-bg.jpg);
+    //background-image: url(../../images/bg/title-bar-01-bg.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
