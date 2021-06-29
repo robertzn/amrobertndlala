@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/amrobertndlala/static/css/main.333ee122.chunk.css",
+    "main.js": "/amrobertndlala/static/js/main.0248cc75.chunk.js",
+    "main.js.map": "/amrobertndlala/static/js/main.0248cc75.chunk.js.map",
+    "runtime-main.js": "/amrobertndlala/static/js/runtime-main.743fea8e.js",
+    "runtime-main.js.map": "/amrobertndlala/static/js/runtime-main.743fea8e.js.map",
+    "static/js/2.89259707.chunk.js": "/amrobertndlala/static/js/2.89259707.chunk.js",
+    "static/js/2.89259707.chunk.js.map": "/amrobertndlala/static/js/2.89259707.chunk.js.map",
+    "static/js/3.f0292d55.chunk.js": "/amrobertndlala/static/js/3.f0292d55.chunk.js",
+    "static/js/3.f0292d55.chunk.js.map": "/amrobertndlala/static/js/3.f0292d55.chunk.js.map",
+    "index.html": "/amrobertndlala/index.html",
+    "static/css/main.333ee122.chunk.css.map": "/amrobertndlala/static/css/main.333ee122.chunk.css.map",
+    "static/js/2.89259707.chunk.js.LICENSE.txt": "/amrobertndlala/static/js/2.89259707.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/amrobertndlala/static/media/mitech-processing-contact-bg.b083743f.png",
+    "static/media/bcr.da244aac.PNG": "/amrobertndlala/static/media/bcr.da244aac.PNG",
+    "static/media/folder-open.e9b9cd7a.svg": "/amrobertndlala/static/media/folder-open.e9b9cd7a.svg",
+    "static/media/logo.517db178.svg": "/amrobertndlala/static/media/logo.517db178.svg",
+    "static/media/me.568e7d92.jpg": "/amrobertndlala/static/media/me.568e7d92.jpg",
+    "static/media/pv1.0923d332.PNG": "/amrobertndlala/static/media/pv1.0923d332.PNG",
+    "static/media/vs.3ad6628a.png": "/amrobertndlala/static/media/vs.3ad6628a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.743fea8e.js",
+    "static/js/2.89259707.chunk.js",
+    "static/css/main.333ee122.chunk.css",
+    "static/js/main.0248cc75.chunk.js"
+  ]
+}
